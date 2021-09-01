@@ -1,0 +1,632 @@
+@charset "UTF-8";
+/* Globales */
+/* Colors */
+/*Font Sizes- spacings*/
+/* Mapa Colors*/
+.backg-primary {
+  background-color: #fe4d4d; }
+
+.backg-blue {
+  background-color: #373794; }
+
+.backg-light-blue {
+  background-color: #64B6AC; }
+
+.backg-white {
+  background-color: #ffffff; }
+
+/*Normalizador*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: normal; }
+
+li a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+dl, ol, ul, p {
+  margin-bottom: 0;
+  padding-left: 0; }
+
+.h2, h2 {
+  font-size: 1.5em;
+  font-weight: bold; }
+
+/* Generales */
+.yanone {
+  font-family: 'Yanone Kaffeesatz', sans-serif; }
+
+.fontOswald {
+  font-family: 'Oswald', sans-serif; }
+
+.marcas {
+  max-width: 250px;
+  max-height: 250px; }
+
+.productos {
+  max-width: 200px;
+  max-height: 190px; }
+
+/* Partials */
+#box1 {
+  display: flex;
+  background: linear-gradient(90deg, white 0%, #b0a5a5 15%, #b0a5a5 82%, #fefefe 100%);
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center; }
+  #box1 .logo__a {
+    font-family: 'Righteous', cursive;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: #fffb90;
+    margin-left: 9rem; }
+  #box1 .buscador {
+    position: relative;
+    margin-left: 6rem; }
+    #box1 .buscador__input {
+      border: solid #333232;
+      border-radius: 5px;
+      height: 35px;
+      padding-left: 2rem; }
+    #box1 .buscador__picture {
+      position: absolute;
+      top: 1px;
+      right: 10px; }
+      #box1 .buscador__picture__img {
+        max-width: 35px;
+        max-height: 35px; }
+  #box1 .redes {
+    display: flex;
+    margin-right: 9em;
+    justify-content: flex-end;
+    width: 33%; }
+    #box1 .redes__list {
+      display: flex;
+      padding: 0 1rem; }
+      #box1 .redes__list__listitem {
+        padding: 0 1rem; }
+        #box1 .redes__list__listitem img {
+          max-width: 35px;
+          max-height: 35px; }
+
+/* Header inferior */
+#box2 {
+  display: flex;
+  height: 7vh;
+  border-bottom: solid rgba(128, 128, 128, 0.2) 1px; }
+  #box2 .conteinerMenu {
+    margin-left: 9em;
+    height: 7vh; }
+    #box2 .conteinerMenu .conteinerMenu__cat li {
+      text-align: center; }
+    #box2 .conteinerMenu .conteinerMenu__cat li a {
+      color: white;
+      text-decoration: none;
+      height: 7vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      transition: background-color ease 0.5s; }
+    #box2 .conteinerMenu .conteinerMenu__cat li a:hover {
+      background-color: #434343; }
+    #box2 .conteinerMenu .conteinerMenu__cat > li {
+      float: left;
+      width: 200px; }
+    #box2 .conteinerMenu .conteinerMenu__cat li ul {
+      display: none;
+      position: absolute;
+      min-width: 170px; }
+    #box2 .conteinerMenu .conteinerMenu__cat li:hover > ul {
+      display: block; }
+    #box2 .conteinerMenu .conteinerMenu__cat li ul li {
+      position: relative; }
+    #box2 .conteinerMenu .conteinerMenu__cat li ul li ul {
+      left: 170px;
+      top: 0px; }
+
+/* Barra navegacion*/
+.barraNav {
+  width: 70%;
+  margin-right: 9em; }
+  .barraNav__list {
+    display: flex;
+    height: 7vh;
+    justify-content: space-around;
+    align-items: center; }
+    .barraNav__list__item {
+      width: 100%;
+      height: 100%; }
+      .barraNav__list__item__enlace {
+        color: black;
+        font-size: 1em;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid rgba(128, 128, 128, 0.2) 1px;
+        transition: transform ease 0.5s; }
+      .barraNav__list__item__enlace:hover {
+        transform: scale(1.05, 1.04); }
+
+/* Footer*/
+#footer {
+  display: grid;
+  grid-template-areas: "none title payment" "copy copy copy";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px 30px;
+  border-top-color: #828282;
+  border-top-style: solid;
+  border-top-width: 1px; }
+  #footer .logoBottom {
+    grid-area: title;
+    font-family: 'Righteous', cursive;
+    font-size: 1.25em;
+    justify-self: center;
+    align-self: center; }
+  #footer .mediosPago {
+    display: flex;
+    grid-area: payment;
+    padding: 0 0.5rem;
+    justify-self: center;
+    align-self: center; }
+    #footer .mediosPago__picture__img {
+      padding: 0.5rem;
+      max-width: 100px; }
+  #footer .copy {
+    grid-area: copy; }
+    #footer .copy__text {
+      text-align: center;
+      color: #FFFFFF; }
+
+/*Sections*/
+/* Marcas */
+.marcasInicio {
+  height: 20vh;
+  margin: 2rem 9rem;
+  margin-bottom: 20vh;
+  display: flex;
+  flex-direction: column; }
+  .marcasInicio__text {
+    text-align: start;
+    border-bottom: groove #fe4d4d 2px;
+    width: 30%; }
+  .marcasInicio__box {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top-color: #333232;
+    border-top-style: ridge;
+    border-top-width: 5px;
+    border-bottom-style: groove;
+    border-bottom-color: #333232;
+    border-bottom-width: 5px; }
+    .marcasInicio__box img {
+      max-width: 10rem; }
+
+.producDest {
+  margin: 0 9rem;
+  display: flex;
+  flex-direction: column; }
+  .producDest__text {
+    text-align: start;
+    border-bottom: groove #fe4d4d 2px;
+    width: 30%; }
+  .producDest__box {
+    margin-top: 2em;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    border-top-color: #333232;
+    border-top-style: ridge;
+    border-top-width: 5px;
+    border-bottom-style: groove;
+    border-bottom-color: #333232;
+    border-bottom-width: 5px; }
+    .producDest__box__picture {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .producDest__box__picture a:hover {
+        color: black; }
+      .producDest__box__picture p {
+        text-align: center;
+        border-bottom: solid #fe4d4d;
+        width: 100%; }
+      .producDest__box__picture__destac {
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        flex-direction: column; }
+      .producDest__box__picture__verProd {
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        width: 100%;
+        padding: 0.5em;
+        opacity: 0;
+        transition: transform 0.8s, opacity 0.8s; }
+      .producDest__box__picture__verProd:hover {
+        color: #fffb90; }
+    .producDest__box__picture:hover .producDest__box__picture__verProd {
+      transform: translate(0px, -34px);
+      opacity: 2; }
+
+.containerMedidas {
+  margin: 2em 9em; }
+  .containerMedidas__text {
+    border-bottom: groove #fe4d4d 2px;
+    width: 30%;
+    margin: 1em 0; }
+
+/* Páginas */
+#mainInicio {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center; }
+  #mainInicio .imagenLocal {
+    background-image: url("../Imagenes/Frente/Frente - copia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0 9rem; }
+    #mainInicio .imagenLocal__enlace {
+      text-decoration: none;
+      color: #FFFFFF; }
+      #mainInicio .imagenLocal__enlace__text {
+        font-family: 'Righteous', cursive;
+        font-size: 4em;
+        display: none; }
+  #mainInicio .imagenLocal:hover {
+    image-rendering: pixelated; }
+    #mainInicio .imagenLocal:hover h2 {
+      animation-duration: 2s;
+      display: block; }
+
+.informacion {
+  padding: 2rem 0;
+  margin: 0px  9rem  0 13rem; }
+  .informacion ul {
+    display: flex;
+    justify-content: center; }
+  .informacion .listInfo ul {
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: normal; }
+
+.textos {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-right: 9vw;
+  margin-left: 0.5em; }
+  .textos ul li {
+    font-size: 1em; }
+
+/* Clasificación Productos */
+#mainProducts .seccionProductos {
+  margin: 0 9rem;
+  display: grid;
+  grid-template-columns: 200px repeat(2, 1fr);
+  grid-template-rows: 80px repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-template-areas: "title title title"  "aside prod1 prod2" "aside prod3 prod4"; }
+  #mainProducts .seccionProductos__titles {
+    display: flex;
+    align-items: center;
+    grid-area: title; }
+    #mainProducts .seccionProductos__titles__text {
+      border-bottom: ridge #fe4d4d 2px;
+      width: 30%;
+      font-size: 1.5em;
+      font-weight: bold; }
+  #mainProducts .seccionProductos__aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    border: solid #64B6AC;
+    border-radius: 5px;
+    height: fit-content; }
+    #mainProducts .seccionProductos__aside p {
+      text-decoration: none;
+      font-size: 1.5em;
+      color: black;
+      border-bottom: solid rgba(128, 128, 128, 0.384) 0.5px; }
+    #mainProducts .seccionProductos__aside a {
+      text-decoration: none;
+      font-size: 1.5em;
+      color: black;
+      border-bottom: solid rgba(128, 128, 128, 0.384) 0.5px; }
+    #mainProducts .seccionProductos__aside .items1 {
+      margin: 0.3rem 0.5rem; }
+    #mainProducts .seccionProductos__aside .items2 {
+      margin: 0.3rem 1rem; }
+    #mainProducts .seccionProductos__aside .items3 {
+      margin: 0.3rem 1.5rem; }
+  #mainProducts .seccionProductos .boxProducts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    border-width: 1px;
+    border-style: groove;
+    border-color: rgba(176, 165, 165, 0.267);
+    border-radius: 2%;
+    transition: transform ease-in-out 0.8s; }
+    #mainProducts .seccionProductos .boxProducts p {
+      font-size: 1.5em;
+      width: 60%;
+      grid-column: 1/ span2;
+      border-bottom: ridge #fe4d4d 2px;
+      margin: 0.5em; }
+    #mainProducts .seccionProductos .boxProducts picture {
+      display: flex;
+      align-items: center;
+      margin: 0.5em; }
+    #mainProducts .seccionProductos .boxProducts ul {
+      height: fit-content;
+      border-radius: 10%;
+      font-size: 1.5em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto 0.5rem;
+      padding: 0.8rem; }
+      #mainProducts .seccionProductos .boxProducts ul li {
+        color: #FFFFFF;
+        font-style: italic;
+        width: fit-content;
+        margin: 0.1rem; }
+  #mainProducts .seccionProductos .boxProducts:hover {
+    transform: scale(1.05, 1.05); }
+  #mainProducts .seccionProductos .primerProd {
+    grid-area: prod1; }
+  #mainProducts .seccionProductos .segundProd {
+    grid-area: prod2; }
+  #mainProducts .seccionProductos .tercerProd {
+    grid-area: prod3; }
+  #mainProducts .seccionProductos .cuartoProd {
+    grid-area: prod4; }
+
+/* Seccion Consulta*/
+#formConsulta .titleForm {
+  margin: 1.5rem 9rem; }
+  #formConsulta .titleForm__text {
+    border-bottom: ridge #fe4d4d 2px;
+    width: 30%;
+    font-weight: bold;
+    font-size: 1.5em; }
+
+#formConsulta .mb-3 {
+  margin: 0 9rem; }
+
+/* Sección Marcas*/
+#seccionMarcas {
+  margin: 0 9rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "title2 title2 title2" "m1 m2 m3" "m4 m5 m6" "m7 m8 m9" "m10 m11 none"; }
+  #seccionMarcas .titleMarcas {
+    grid-area: title2;
+    justify-self: flex-start;
+    width: 100%; }
+    #seccionMarcas .titleMarcas__text {
+      border-bottom: ridge #fe4d4d 2px;
+      width: 20%; }
+
+#image404 {
+  display: flex;
+  justify-content: center; }
+  #image404 picture img {
+    max-height: 500px;
+    width: 800px; }
+
+#text404 {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  align-items: center; }
+  #text404 p {
+    font-size: 2em;
+    border-bottom: ridge #fe4d4d 2px; }
+  #text404 a {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #fe4d4d;
+    border-radius: 5px;
+    transition: all ease 0.5s; }
+  #text404 a:hover {
+    background-color: #434343;
+    color: white; }
+
+/* Responsive */
+/* Responsive */
+@media screen and (max-width: 1180px) {
+  #box1 {
+    display: grid;
+    height: 15vh;
+    grid-template-areas: "logo logo" "buscador redes";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2.5rem 2.5rem; }
+  #box1 .logo {
+    grid-area: logo;
+    align-self: center;
+    justify-self: center; }
+  #box1 .logo__a {
+    margin: 0; }
+  .buscador {
+    grid-area: buscador;
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: 1em; }
+  .redes {
+    grid-area: redes;
+    align-self: center;
+    justify-self: flex-start;
+    margin-left: 1em; }
+  #footer {
+    display: flex;
+    flex-direction: column; }
+  .logoBottom {
+    padding: 1em; }
+  .mediosPago {
+    padding: 1em; } }
+
+@media screen and (max-width: 1000px) {
+  #box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; }
+  #box1 .buscador {
+    margin: 0.5em; }
+  #box1 .redes {
+    justify-content: center;
+    margin: 0; }
+  #box2 {
+    height: 4vh; }
+  #box2 .conteinerMenu {
+    height: 4vh;
+    margin: 0; }
+  #box2 .conteinerMenu .conteinerMenu__cat li a {
+    height: 4vh; }
+  .barraNav {
+    margin: 0;
+    width: 100%; }
+  .barraNav ul {
+    height: 4vh; }
+  #mainInicio .imagenLocal {
+    margin: 0; }
+  .informacion {
+    margin: 0 1em; }
+  .producDest {
+    height: auto;
+    margin: 0 1rem; }
+  .producDest__box__picture__destac {
+    height: auto; }
+  .producDest a img {
+    max-width: 150px;
+    max-height: 140px; }
+  .marcasInicio {
+    margin: 1em 1em; }
+  .marcasInicio div picture a img {
+    max-width: 6em; }
+  .titleForm {
+    margin: 0; }
+  .mb-3 {
+    margin: 0; } }
+
+@media screen and (max-width: 768px) {
+  #box2 {
+    height: 9vh;
+    flex-direction: column;
+    align-items: center; }
+  #box2 .conteinerMenu {
+    margin: 0;
+    height: 4vh; }
+  .barraNav {
+    margin: 0; }
+  .imagenLocal a h2 {
+    font-size: 1.5em;
+    display: block; }
+  .producDest {
+    height: 27vh; }
+  .producDest__box {
+    height: auto;
+    margin-top: 1em; }
+  .producDest__box picture {
+    height: 110px; }
+  .producDest__box picture p {
+    font-size: 0.8125em; }
+  .producDest__box__picture__destac {
+    height: auto; }
+  .producDest__box a img {
+    max-width: 130px;
+    max-height: 110px; }
+  .marcasInicio {
+    margin-bottom: 0; }
+  .marcasInicio div {
+    margin-top: 1rem; }
+  .marcasInicio div picture a img {
+    max-width: 6em; }
+  .logoBottom {
+    font-size: .8rem; }
+  .mediosPago picture img {
+    padding: 0.3rem;
+    max-width: 60px; } }
+
+@media screen and (max-width: 480px) {
+  .logo a {
+    font-size: 20px; }
+  .buscador input {
+    height: 25px; }
+  .buscador picture img {
+    max-width: 25px;
+    max-height: 25px; }
+  .redes ul li a img {
+    max-width: 25px;
+    max-height: 25px; }
+  .imagenLocal {
+    height: 30vh;
+    margin: 0 3rem; }
+  .imagenLocal a h2 {
+    font-size: 1.5rem; }
+  .informacion {
+    margin: auto; }
+  .informacion > ul {
+    display: grid;
+    grid-template-areas: "local textolocal none" "point visitanos none" "tel contacto none";
+    grid-template-columns: 1fr 1fr 2rem;
+    grid-template-rows: repeat(3, 5rem); }
+  #picLocal {
+    grid-area: local;
+    justify-self: flex-end; }
+  #atencion {
+    grid-area: textolocal; }
+  #picUbi {
+    grid-area: point;
+    justify-self: flex-end; }
+  #visitar {
+    grid-area: visitanos; }
+  #picTel {
+    grid-area: tel;
+    justify-self: flex-end; }
+  #contact {
+    grid-area: contacto; }
+  .textos ul {
+    display: flex;
+    flex-direction: column; }
+  .producDest {
+    height: fit-content; }
+  .producDest__box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .marcasInicio {
+    height: fit-content; }
+  .marcasInicio div {
+    flex-direction: column; } }

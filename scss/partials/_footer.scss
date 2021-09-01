@@ -1,0 +1,47 @@
+/* Footer*/
+
+#footer {
+    display: grid;
+    grid-template-areas: 
+    "none title payment"
+    "copy copy copy";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 30px;
+    border-top-color: #828282;
+    border-top-style: solid;
+    border-top-width: 1px;
+
+    .logoBottom {
+        grid-area: title;
+        font-family: 'Righteous', cursive;
+        font-size: $m;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .mediosPago {
+        display: flex;
+        grid-area: payment;
+        padding: 0 0.5rem;
+        justify-self: center;
+        align-self: center;
+
+        &__picture {
+            &__img {
+                padding: 0.5rem; 
+                max-width: 100px;
+            }
+        }
+    }
+
+    .copy {
+        grid-area: copy;
+
+        &__text {
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+
+
+}

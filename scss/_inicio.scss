@@ -1,0 +1,71 @@
+#mainInicio {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    .imagenLocal {
+        background-image: url("../Imagenes/Frente/Frente\ -\ copia.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        margin: 0 9rem;
+
+        &__enlace {
+            text-decoration: none;
+            color: #FFFFFF;
+
+            &__text {
+                font-family: 'Righteous', cursive;
+                font-size: $s*4;
+                display: none;
+            }
+        }
+    }
+    .imagenLocal:hover {
+        image-rendering: pixelated;
+        h2 {
+            animation-duration: 2s;
+            display:block;
+        }
+    }
+
+    
+
+}
+
+.informacion {
+    padding: 2rem 0;
+    margin: 0px  9rem  0 13rem;
+
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .listInfo {
+        ul {
+            flex-direction: column;
+            align-items: flex-start;
+            font-weight: normal;
+        }
+    }
+}   
+
+.textos {
+    font-size: $m;
+    font-weight: bold;
+    margin-right: 9vw;
+    margin-left: $s/2;
+
+    ul {
+        li {
+            font-size: $s;
+        }
+    }
+}

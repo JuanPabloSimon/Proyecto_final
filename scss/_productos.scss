@@ -1,0 +1,130 @@
+/* Clasificación Productos */
+#mainProducts {
+    .seccionProductos {
+        margin: 0 9rem;
+        display: grid;
+        grid-template-columns: 200px repeat(2, 1fr);
+        grid-template-rows: 80px repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-areas: 
+        "title title title" 
+        "aside prod1 prod2"
+        "aside prod3 prod4" ;
+
+        &__titles {
+            display: flex;
+            align-items: center;
+            grid-area: title;
+
+            &__text {
+                border-bottom: ridge $primary 2px;
+                width: 30%;
+                font-size: $l;
+                font-weight: bold;
+            }
+        }
+
+        &__aside {
+            grid-area: aside ;
+            display: flex;
+            flex-direction: column;
+            border: solid $light-blue;
+            border-radius: 5px;
+            height: fit-content;
+
+            p {
+                text-decoration: none;
+                font-size: $l;
+                color:black;
+                border-bottom: solid rgba(128, 128, 128, 0.384) 0.5px;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: $l;
+                color:black;
+                border-bottom: solid rgba(128, 128, 128, 0.384) 0.5px;
+            }
+
+            .items1 {
+                margin: 0.3rem 0.5rem;
+            }
+            
+            .items2 {
+                margin: 0.3rem 1rem;
+            }
+            
+            .items3 {
+                margin: 0.3rem 1.5rem;
+            }
+        }
+    
+        .boxProducts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto 1fr;
+            border-width: 1px;
+            border-style:groove;
+            border-color:rgba(176, 165, 165, 0.267);
+            border-radius: 2%;
+            transition: transform ease-in-out 0.8s;
+
+            p {
+                font-size: $l;
+                width: 60%;
+                grid-column: 1/ span2;
+                border-bottom: ridge $primary 2px;
+                margin: $s/2;
+            }
+
+            picture {
+                display: flex;
+                align-items: center;
+                margin: $s/2;
+            }
+
+            ul {
+                height: fit-content;
+                // background-color: $light-blue;
+                border-radius: 10%;
+                font-size: $l;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: auto 0.5rem;
+                padding: 0.8rem;
+
+                li {
+                    color: #FFFFFF;
+                    font-style: italic;
+                    width: fit-content;
+                    margin: 0.1rem;
+                }
+            }
+        }
+
+        .boxProducts:hover {
+            transform: scale(1.05,1.05);
+        }
+
+        .primerProd {
+            grid-area: prod1 ;
+            
+        }
+        .segundProd {
+            grid-area: prod2;
+            
+        }
+        .tercerProd {
+            grid-area: prod3;
+            
+        }
+        .cuartoProd {
+            grid-area: prod4;
+            
+        }
+    }
+
+}
+

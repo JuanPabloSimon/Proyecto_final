@@ -1,0 +1,27 @@
+/* Globales */
+@import './variables.scss' ;
+@import './normalizador.scss' ;
+
+/* Partials */
+
+@import './partials/header' ;
+@import './partials/footer' ;
+
+/*Sections*/
+
+@import './sections/sectMarcas';
+@import './sections/sectProducDest';
+@import './sections/medidasProd';
+
+/* Páginas */
+
+@import './inicio.scss';
+@import './productos';
+@import './consultas' ;
+@import './marcas';
+@import './404';
+
+
+/* Responsive */
+
+@import './responsive'

@@ -1,0 +1,290 @@
+/* Responsive */
+
+@media screen and (max-width: 1180px) {
+    
+    #box1 { 
+        display: grid;
+        height: 15vh;
+        grid-template-areas: 
+        "logo logo"
+        "buscador redes";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2.5rem 2.5rem;
+    }
+
+    #box1 .logo {
+        grid-area: logo;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #box1 .logo__a {
+        margin: 0;
+    }
+    
+    .buscador {
+        grid-area: buscador;
+        align-self: center;
+        justify-self: flex-end;
+        margin-right: $s;
+    }
+
+    .redes {
+        grid-area: redes;
+        align-self: center;
+        justify-self: flex-start;
+        margin-left: $s;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .logoBottom {
+        padding: $s;
+    }
+
+    .mediosPago {
+        padding: $s;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #box1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+    }
+
+    #box1 .buscador {
+        margin: $s/2;
+    }
+
+    #box1 .redes {
+        justify-content: center;
+        margin: 0;
+    }
+
+    #box2 {
+        height: 4vh;
+    }
+
+    #box2 .conteinerMenu {
+        height: 4vh;
+        margin: 0;
+    }
+    #box2 .conteinerMenu .conteinerMenu__cat li a {
+        height: 4vh;
+    }
+
+    .barraNav {
+        margin: 0;
+        width: 100%;
+    }
+    .barraNav ul {
+        height: 4vh;
+    }
+
+    #mainInicio {
+        .imagenLocal {
+            margin: 0;
+        }
+    }
+
+    .informacion {
+        margin: 0 1em;
+    }
+
+    .producDest {
+        height: auto;
+        margin: 0 1rem;
+    }
+
+    .producDest__box__picture__destac {
+        height: auto;
+    }
+
+    .producDest a img {
+        max-width: 150px;
+        max-height: 140px;
+    }
+
+    .marcasInicio {
+        margin: 1em 1em;
+    }
+
+    .marcasInicio div picture a img {
+        max-width: $s*6;
+    }
+
+    .titleForm {
+        margin: 0;
+    }
+    
+    .mb-3 {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #box2 {
+        height: 9vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #box2 .conteinerMenu {
+        margin: 0;
+        height: 4vh;
+    }
+
+    .barraNav {
+        margin: 0;
+    }
+
+    .imagenLocal a h2 {
+        font-size: $l;
+        display: block;
+    }
+
+    .producDest {
+        height: 27vh;
+    }
+    .producDest__box {
+        height: auto;
+        margin-top: $s;
+    }
+
+    .producDest__box picture {
+        height: 110px;
+    }
+
+    .producDest__box picture p {
+        font-size: $xs;
+    }
+
+    .producDest__box__picture__destac {
+        height: auto;
+    }
+
+    .producDest__box a img {
+        max-width: 130px;
+        max-height: 110px;
+    }
+
+    .marcasInicio {
+        margin-bottom: 0;
+   }
+
+    .marcasInicio div {
+        margin-top: 1rem ;
+    }
+
+    .marcasInicio div picture a img {
+        max-width: $s*6;
+    }
+
+    .logoBottom {
+        font-size: .8rem;
+    }
+
+    .mediosPago picture img {
+        padding: 0.3rem;
+        max-width: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo a {
+        font-size: 20px;
+    }
+
+    .buscador input {
+        height: 25px;
+    }
+
+    .buscador picture img {
+        max-width: 25px;
+        max-height: 25px;
+    }
+
+    .redes ul li a img {
+        max-width: 25px;
+        max-height: 25px;
+    }
+
+    .imagenLocal {
+        height: 30vh;
+        margin: 0 3rem;
+    }
+    .imagenLocal a h2 {
+        font-size: 1.5rem;
+    }
+
+    .informacion {
+        margin: auto;
+    }
+
+    .informacion>ul {
+        display: grid;
+        grid-template-areas: 
+        "local textolocal none"
+        "point visitanos none"
+        "tel contacto none";
+        grid-template-columns: 1fr 1fr 2rem;
+        grid-template-rows: repeat(3,5rem);
+    }
+
+    #picLocal {
+        grid-area: local;
+        justify-self: flex-end;
+    }
+
+    #atencion {
+        grid-area: textolocal;
+    }
+
+    #picUbi {
+        grid-area: point;
+        justify-self: flex-end;
+    }
+
+    #visitar {
+        grid-area: visitanos ;
+    }
+
+    #picTel {
+        grid-area: tel;
+        justify-self: flex-end;
+    }
+
+    #contact {
+        grid-area: contacto ;
+    }
+
+    .textos ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .producDest {
+        height: fit-content;
+    }
+    .producDest__box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+
+    .marcasInicio {
+        height: fit-content;
+    }
+
+    .marcasInicio div {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,45 @@
+/*Normalizador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: normal;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+dl, ol, ul, p {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.h2, h2 {
+    font-size: $l;
+    font-weight: bold;
+}
+
+/* Generales */
+
+.yanone {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.fontOswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.marcas {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.productos{
+    max-width: 200px;
+    max-height: 190px;
+}

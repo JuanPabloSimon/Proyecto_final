@@ -1,0 +1,29 @@
+/* Colors */
+$primary: rgb(254, 77, 77);
+$secondary: rgb(255, 251, 144);
+$dark: rgb(51, 50, 50);
+$blue: rgb(55, 55, 148);
+$light-blue: #64B6AC;
+
+/*Font Sizes- spacings*/
+$xxs: 0.75em;
+$xs: 0.8125em;
+$s: 1em;
+$m: 1.25em;
+$l:1.5em;
+$xl:1.8em;
+
+/* Mapa Colors*/
+
+$backg: (
+    primary: rgb(254, 77, 77),
+    blue: rgb(55, 55, 148),
+    light-blue: #64B6AC,
+    white: #ffffff
+);
+
+@each $key, $color in $backg {
+    .backg-#{$key} {
+        background-color: $color;
+    }
+}

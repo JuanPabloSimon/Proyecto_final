@@ -1,0 +1,9 @@
+.containerMedidas {
+    margin: 2em 9em;
+
+    &__text {
+        border-bottom: groove $primary 2px;
+        width: 30%;
+        margin: 1em 0;
+    }
+}
