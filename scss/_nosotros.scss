@@ -1,0 +1,25 @@
+.nosotros {
+    margin: 1.5rem 9rem;
+    h2 {
+        text-align:start;
+        border-bottom: groove $primary 2px;
+        width: 15%
+    }
+
+    div {
+        margin-top: 2em;
+        border-top-color: $dark;
+        border-top-style: ridge;
+        border-top-width: 5px;
+        border-bottom-style:groove;
+        border-bottom-color: $dark;
+        border-bottom-width: 5px;
+        padding: $xxs 0;
+        p {
+            font-size: $l;
+            font-style: italic;
+           
+            // line-height: $s;
+        }
+    }
+}
