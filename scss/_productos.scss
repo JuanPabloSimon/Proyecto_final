@@ -3,7 +3,7 @@
     .seccionProductos {
         margin: 0 9rem;
         display: grid;
-        grid-template-columns: 200px repeat(2, 1fr);
+        grid-template-columns: 100px repeat(2, 1fr);
         grid-template-rows: 80px repeat(2, 1fr);
         grid-gap: 10px;
         grid-template-areas: 
@@ -26,17 +26,11 @@
 
         &__aside {
             grid-area: aside ;
-            display: flex;
-            flex-direction: column;
-            border: solid $light-blue;
-            border-radius: 5px;
-            height: fit-content;
 
             p {
                 text-decoration: none;
                 font-size: $l;
                 color:black;
-                border-bottom: solid rgba(128, 128, 128, 0.384) 0.5px;
             }
 
             a {

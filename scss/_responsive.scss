@@ -48,8 +48,41 @@
     .mediosPago {
         padding: $s;
     }
-}
 
+    /*Pagina Consults*/
+    #formConsulta {
+        .titleForm {
+            margin: 1.5rem 0rem;
+        }
+        .mb-3 {
+            margin: 0rem;
+        }
+    }   
+
+    /*Sección Productos*/
+    #mainProducts {
+        .seccionProductos {
+            .boxProducts {
+                ul {
+                    font-size: $s;
+    
+                    li {
+                        color: #FFFFFF;
+                        font-style: italic;
+                        width: fit-content;
+                        margin: 0.1rem;
+                    }
+                }
+            }
+        }
+    }
+    .productos {
+        max-width: 150px;
+        max-height: 140px;
+    }
+
+}
+    
 @media screen and (max-width: 1000px) {
     #box1 {
         display: flex;
@@ -69,7 +102,7 @@
     }
 
     #box2 {
-        height: 4vh;
+        height: 5vh;
     }
 
     #box2 .conteinerMenu {
@@ -77,7 +110,7 @@
         margin: 0;
     }
     #box2 .conteinerMenu .conteinerMenu__cat li a {
-        height: 4vh;
+        height: 5vh;
     }
 
     .barraNav {
@@ -85,7 +118,7 @@
         width: 100%;
     }
     .barraNav ul {
-        height: 4vh;
+        height: 5vh;
     }
 
     #mainInicio {
@@ -127,14 +160,48 @@
     .mb-3 {
         margin: 0;
     }
+    /*Pagina Marcas*/
+    #seccionMarcas {
+        margin: 0 1em;
+    }
+    .marcas {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    /*Pagina Nosotros*/
+    .nosotros {
+        margin: 1.5em 1em;
+    }
+
+    /* Seccion Productos*/
+    #mainProducts {
+        .seccionProductos {
+            margin: 0 1em;
+        }
+
+        .containerMedidas {
+            margin: 2em 1em;
+        }
+    }
+    /*Pagina Consults*/
+    #formConsulta {
+        .titleForm {
+            margin: 1.5rem 0rem;
+        }
+        .mb-3 {
+            margin: 0rem;
+        }
+    }   
 }
 
 @media screen and (max-width: 768px) {
 
     #box2 {
-        height: 9vh;
+        height: 10vh;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
     }
     
     #box2 .conteinerMenu {
@@ -196,12 +263,82 @@
         padding: 0.3rem;
         max-width: 60px;
     }
+    /*Pagina Marcas*/
+    #seccionMarcas {
+        margin: 0 1em;
+    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 80px repeat(6, 1fr);
+        align-items: center;
+        justify-items: center;
+        grid-template-areas: 
+        "title2 title2 "
+        "m1 m2"
+        "m3 m4"
+        "m5 m6"
+        "m7 m8"
+        "m9 m10"
+        "m11 none";
+    }
+    /*Pagina Productos*/
+    #mainProducts {
+        .seccionProductos {
+            .boxProducts {
+                p {
+                    font-size: $s;
+                }
+                ul {
+                    font-size: $xs;
+    
+                    li {
+                        color: #FFFFFF;
+                        font-style: italic;
+                        width: fit-content;
+                        margin: 0.1rem;
+                    }
+                }
+            }
+        }
+    }
+    .productos {
+        max-width: 110px;
+        max-height: 100px;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    /*Header*/
+
+    .barraNav__list__item__enlace {
+        font-size: $xxs;
+    }
+    /*Pagina Productos*/
+    #mainProducts {
+        .seccionProductos {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            grid-template-rows: 80px repeat(4, 1fr);
+            grid-gap: 10px;
+            grid-template-areas: 
+            "title title" 
+            "aside prod1"
+            "aside prod2" 
+            "aside prod3" 
+            "aside prod4" ;
+
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .logo a {
-        font-size: 20px;
+    #box1 {
+        .logo a {
+            font-size: $m;
+        }
     }
+        
 
     .buscador input {
         height: 25px;
@@ -287,4 +424,26 @@
     .marcasInicio div {
         flex-direction: column;
     }
+
+    /*Footer*/
+    #footer {
+        .logoBottom {
+            font-size: $s;
+        }
+    }
+    /*Pagina Marcas*/
+    .marcas {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    /*Pagina Nosotros*/
+    .nosotros {
+        div {
+            p {
+                font-size: $s;
+            }
+        }
+    }
+
 }

@@ -325,7 +325,7 @@ dl, ol, ul, p {
 #mainProducts .seccionProductos {
   margin: 0 9rem;
   display: grid;
-  grid-template-columns: 200px repeat(2, 1fr);
+  grid-template-columns: 100px repeat(2, 1fr);
   grid-template-rows: 80px repeat(2, 1fr);
   grid-gap: 10px;
   grid-template-areas: "title title title"  "aside prod1 prod2" "aside prod3 prod4"; }
@@ -339,17 +339,11 @@ dl, ol, ul, p {
       font-size: 1.5em;
       font-weight: bold; }
   #mainProducts .seccionProductos__aside {
-    grid-area: aside;
-    display: flex;
-    flex-direction: column;
-    border: solid #64B6AC;
-    border-radius: 5px;
-    height: fit-content; }
+    grid-area: aside; }
     #mainProducts .seccionProductos__aside p {
       text-decoration: none;
       font-size: 1.5em;
-      color: black;
-      border-bottom: solid rgba(128, 128, 128, 0.384) 0.5px; }
+      color: black; }
     #mainProducts .seccionProductos__aside a {
       text-decoration: none;
       font-size: 1.5em;
@@ -512,7 +506,23 @@ dl, ol, ul, p {
   .logoBottom {
     padding: 1em; }
   .mediosPago {
-    padding: 1em; } }
+    padding: 1em; }
+  /*Pagina Consults*/
+  #formConsulta .titleForm {
+    margin: 1.5rem 0rem; }
+  #formConsulta .mb-3 {
+    margin: 0rem; }
+  /*Sección Productos*/
+  #mainProducts .seccionProductos .boxProducts ul {
+    font-size: 1em; }
+    #mainProducts .seccionProductos .boxProducts ul li {
+      color: #FFFFFF;
+      font-style: italic;
+      width: fit-content;
+      margin: 0.1rem; }
+  .productos {
+    max-width: 150px;
+    max-height: 140px; } }
 
 @media screen and (max-width: 1000px) {
   #box1 {
@@ -527,17 +537,17 @@ dl, ol, ul, p {
     justify-content: center;
     margin: 0; }
   #box2 {
-    height: 4vh; }
+    height: 5vh; }
   #box2 .conteinerMenu {
     height: 4vh;
     margin: 0; }
   #box2 .conteinerMenu .conteinerMenu__cat li a {
-    height: 4vh; }
+    height: 5vh; }
   .barraNav {
     margin: 0;
     width: 100%; }
   .barraNav ul {
-    height: 4vh; }
+    height: 5vh; }
   #mainInicio .imagenLocal {
     margin: 0; }
   .informacion {
@@ -557,13 +567,33 @@ dl, ol, ul, p {
   .titleForm {
     margin: 0; }
   .mb-3 {
-    margin: 0; } }
+    margin: 0; }
+  /*Pagina Marcas*/
+  #seccionMarcas {
+    margin: 0 1em; }
+  .marcas {
+    max-width: 200px;
+    max-height: 200px; }
+  /*Pagina Nosotros*/
+  .nosotros {
+    margin: 1.5em 1em; }
+  /* Seccion Productos*/
+  #mainProducts .seccionProductos {
+    margin: 0 1em; }
+  #mainProducts .containerMedidas {
+    margin: 2em 1em; }
+  /*Pagina Consults*/
+  #formConsulta .titleForm {
+    margin: 1.5rem 0rem; }
+  #formConsulta .mb-3 {
+    margin: 0rem; } }
 
 @media screen and (max-width: 768px) {
   #box2 {
-    height: 9vh;
+    height: 10vh;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-between; }
   #box2 .conteinerMenu {
     margin: 0;
     height: 4vh; }
@@ -596,11 +626,45 @@ dl, ol, ul, p {
     font-size: .8rem; }
   .mediosPago picture img {
     padding: 0.3rem;
-    max-width: 60px; } }
+    max-width: 60px; }
+  /*Pagina Marcas*/
+  #seccionMarcas {
+    margin: 0 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px repeat(6, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: "title2 title2 " "m1 m2" "m3 m4" "m5 m6" "m7 m8" "m9 m10" "m11 none"; }
+  /*Pagina Productos*/
+  #mainProducts .seccionProductos .boxProducts p {
+    font-size: 1em; }
+  #mainProducts .seccionProductos .boxProducts ul {
+    font-size: 0.8125em; }
+    #mainProducts .seccionProductos .boxProducts ul li {
+      color: #FFFFFF;
+      font-style: italic;
+      width: fit-content;
+      margin: 0.1rem; }
+  .productos {
+    max-width: 110px;
+    max-height: 100px; } }
+
+@media screen and (max-width: 560px) {
+  /*Header*/
+  .barraNav__list__item__enlace {
+    font-size: 0.75em; }
+  /*Pagina Productos*/
+  #mainProducts .seccionProductos {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 80px repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: "title title"  "aside prod1" "aside prod2"  "aside prod3"  "aside prod4"; } }
 
 @media screen and (max-width: 480px) {
-  .logo a {
-    font-size: 20px; }
+  #box1 .logo a {
+    font-size: 1.25em; }
   .buscador input {
     height: 25px; }
   .buscador picture img {
@@ -648,4 +712,14 @@ dl, ol, ul, p {
   .marcasInicio {
     height: fit-content; }
   .marcasInicio div {
-    flex-direction: column; } }
+    flex-direction: column; }
+  /*Footer*/
+  #footer .logoBottom {
+    font-size: 1em; }
+  /*Pagina Marcas*/
+  .marcas {
+    max-width: 150px;
+    max-height: 150px; }
+  /*Pagina Nosotros*/
+  .nosotros div p {
+    font-size: 1em; } }
