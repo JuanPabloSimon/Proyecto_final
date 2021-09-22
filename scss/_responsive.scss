@@ -9,7 +9,7 @@
         "logo logo"
         "buscador redes";
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2.5rem 2.5rem;
+        // grid-template-rows: 2.5rem 2.5rem;
     }
 
     #box1 .logo {
@@ -89,7 +89,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 20vh;
+        height: 21vh;
     }
 
     #box1 .buscador {
@@ -334,8 +334,13 @@
 
 @media screen and (max-width: 480px) { 
     #box1 {
-        .logo a {
-            font-size: $m;
+        .logo {
+            &__a {
+                img {
+                    max-width: 10em;
+                }
+            }
+            
         }
     }
         

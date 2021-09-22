@@ -56,15 +56,14 @@ dl, ol, ul, p {
 #box1 {
   display: flex;
   background: linear-gradient(90deg, white 0%, #b0a5a5 15%, #b0a5a5 82%, #fefefe 100%);
-  height: 10vh;
+  height: 13vh;
   justify-content: space-between;
   align-items: center; }
   #box1 .logo__a {
-    font-family: 'Righteous', cursive;
-    font-size: 1.8em;
-    text-decoration: none;
-    color: #fffb90;
     margin-left: 9rem; }
+    #box1 .logo__a img {
+      max-width: 15em;
+      max-height: 4sem; }
   #box1 .buscador {
     position: relative;
     margin-left: 6rem; }
@@ -482,8 +481,7 @@ dl, ol, ul, p {
     display: grid;
     height: 15vh;
     grid-template-areas: "logo logo" "buscador redes";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2.5rem 2.5rem; }
+    grid-template-columns: 1fr 1fr; }
   #box1 .logo {
     grid-area: logo;
     align-self: center;
@@ -530,7 +528,7 @@ dl, ol, ul, p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20vh; }
+    height: 21vh; }
   #box1 .buscador {
     margin: 0.5em; }
   #box1 .redes {
@@ -663,8 +661,8 @@ dl, ol, ul, p {
     grid-template-areas: "title title"  "aside prod1" "aside prod2"  "aside prod3"  "aside prod4"; } }
 
 @media screen and (max-width: 480px) {
-  #box1 .logo a {
-    font-size: 1.25em; }
+  #box1 .logo__a img {
+    max-width: 10em; }
   .buscador input {
     height: 25px; }
   .buscador picture img {
