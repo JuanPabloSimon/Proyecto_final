@@ -61,7 +61,7 @@
             border-style:groove;
             border-color:rgba(176, 165, 165, 0.267);
             border-radius: 2%;
-            transition: transform ease-in-out 0.8s;
+            transition: all ease-in-out 0.8s;
 
             p {
                 font-size: $l;
@@ -99,7 +99,8 @@
         }
 
         .boxProducts:hover {
-            transform: scale(1.05,1.05);
+            border: solid $dark 1px;
+            // transform: scale(1.05,1.05);
         }
 
         .primerProd {
