@@ -4,12 +4,13 @@
     
     #box1 { 
         display: grid;
-        height: 15vh;
+        height: fit-content;
+        padding: 0.5em 0;
         grid-template-areas: 
         "logo logo"
         "buscador redes";
         grid-template-columns: 1fr 1fr;
-        // grid-template-rows: 2.5rem 2.5rem;
+        gap: 0.5em;
     }
 
     #box1 .logo {
@@ -34,6 +35,7 @@
         align-self: center;
         justify-self: flex-start;
         margin-left: $s;
+        width: 0;
     }
 
     #footer {
@@ -89,7 +91,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 21vh;
+        height: fit-content;
     }
 
     #box1 .buscador {

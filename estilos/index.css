@@ -153,9 +153,9 @@ dl, ol, ul, p {
         justify-content: center;
         align-items: center;
         border: solid rgba(128, 128, 128, 0.2) 1px;
-        transition: all 0.5s; }
+        transition: all ease 0.5s; }
       .barraNav__list__item__enlace:hover {
-        transform: scale(1.05, 1.04);
+        border: solid #333232 1px;
         color: black; }
 
 /* Footer*/
@@ -287,7 +287,7 @@ dl, ol, ul, p {
     background-attachment: fixed;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     height: 50vh;
     margin: 0 9rem; }
     #mainInicio .imagenLocal__enlace {
@@ -296,10 +296,11 @@ dl, ol, ul, p {
       #mainInicio .imagenLocal__enlace__text {
         font-family: 'Righteous', cursive;
         font-size: 4em;
-        display: none; }
+        opacity: 0;
+        transition: all ease 2s; }
   #mainInicio .imagenLocal:hover h2 {
-    animation-duration: 2s;
-    display: block; }
+    transform: translate(0, -150px);
+    opacity: 2; }
 
 .informacion {
   padding: 2rem 0;
@@ -479,9 +480,11 @@ dl, ol, ul, p {
 @media screen and (max-width: 1180px) {
   #box1 {
     display: grid;
-    height: 15vh;
+    height: fit-content;
+    padding: 0.5em 0;
     grid-template-areas: "logo logo" "buscador redes";
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em; }
   #box1 .logo {
     grid-area: logo;
     align-self: center;
@@ -497,7 +500,8 @@ dl, ol, ul, p {
     grid-area: redes;
     align-self: center;
     justify-self: flex-start;
-    margin-left: 1em; }
+    margin-left: 1em;
+    width: 0; }
   #footer {
     display: flex;
     flex-direction: column; }
@@ -528,7 +532,7 @@ dl, ol, ul, p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 21vh; }
+    height: fit-content; }
   #box1 .buscador {
     margin: 0.5em; }
   #box1 .redes {
